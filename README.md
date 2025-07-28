@@ -20,3 +20,5 @@ Final full-stack projects
 <br>
 Regular progress updates  
 <br>
+2/84 videos completed.
+
