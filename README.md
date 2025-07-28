@@ -21,4 +21,5 @@ Final full-stack projects
 Regular progress updates  
 <br>
 2/84 videos completed.
+documentry following https://developer.mozilla.org/en-US/docs/Web/HTML
 
