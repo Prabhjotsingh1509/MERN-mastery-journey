@@ -1,0 +1,24 @@
+/* selectors are of many types:*/
+/*element selector*/
+h1{
+    font-size:smaller;
+    text-align:center;
+}
+/*id selector */
+#para{
+    background-color:blue;
+}
+#paragraph{
+    background-color: yellow;
+}
+/*class selector*/
+.art{
+    color:red;
+}
+.article{
+    color:brown;
+}
+/*group selector */
+h2,div{
+    background-color:brown;
+}
