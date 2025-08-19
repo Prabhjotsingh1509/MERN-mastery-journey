@@ -1,0 +1,21 @@
+#firstpara
+{
+    background-color: yellow;
+    color:brown;
+    line-height: 50px;
+}
+/*using rgba*/
+#secondpara
+{
+    background-color :rgb(0,0,0,0.8);
+    color:rgb(255,255,255);
+    line-height: 35px;
+}
+/*HEXA DECIMAL */
+#thirdpara{
+    background-color:#ff9d00;
+}
+/*Hsl value (hue,saturation,lightness)*/
+#fourthpara{
+    background-color:hsl(0,100%,50%);
+}
