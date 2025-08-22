@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display tag</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        #box{
+            border:solid 2px black;
+            height:300px;
+            width:300px;
+            padding:10px;
+            margin:10px;
+            
+        }
+        span{
+            border:solid 2px black;
+            height:300px;
+            width:300px;
+            padding:10px;
+            margin:10px;
+            /*it is used to convert inline element to block element.*/
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--Block Property-->
+    <!--respect the margin, padding-->
+    <!--Custom width and height applied.-->
+    <div id="box">
+        Welcome to Code help.
+    </div>
+    <!--Inline Property-->
+    <!--not follow the margin,padding etc.-->
+    <!--custom width and height not applied.-->
+    <span>
+        Prabhjot singh.
+
+    </span>
+</body>
+</html>
