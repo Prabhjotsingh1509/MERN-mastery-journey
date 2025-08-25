@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Position Property</title>
+    <style>
+        img{
+            margin:10px;
+            height:300px;
+            width:300px;
+           
+        }
+        .container{
+            height:4000px;
+            background-color:beige;
+            border:1px solid black;
+        }
+        .image1{
+            /*relative:*/
+            position:relative;
+            top:100px;
+
+        }
+        .image2{
+            position:absolute;
+            top:50px;
+
+        }
+        .image3{
+            position:fixed;
+        }
+        .image4{
+            position:sticky;
+            top:10px;
+        }
+        .con{
+            height:4000px;
+            background-color:red;
+            border:1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img 
+    src="poster 1.jpg" 
+    alt="diljit dosanjh"
+    class="image1"
+    >
+    <img 
+    src="poster 3.jpeg" 
+    alt="diljit dosanjh"
+    class="image2"
+    >
+    <img 
+    src="poster 2.jpeg" 
+    alt="diljit dosanjh"
+    class="image3"
+    >
+    <img 
+    src="poster 4.jpg" 
+    alt="diljit dosanjh"
+    class="image4"
+    >
+    </div>
+    <div class="con"></div>
+
+</body>
+</html>
