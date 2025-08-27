@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        #container {
+            width: 100vw;
+            height: 100vh;
+            background-color: aliceblue;
+            border: 5px solid black;
+
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 5px solid yellow;
+            border-radius: 50%;
+            margin: 10px;
+            position: relative;
+            animation-name: rightmovement;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            /* ease:slow,fast,slow ; ease-out:specifies an animation with a slow start;ease in:slow start */
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+
+        /* The animation code */
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /* The element to apply the animation to */
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes rightmovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 1200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+
+</html>
