@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow in text</title>
+    <style>
+        .s1{
+            /* text-shadow:horizontal vertical color */
+            text-shadow: 2px 2px grey ;
+        }
+        .s2{
+            text-shadow: 2px 2px 5px red;
+        }
+        .s3{
+            text-shadow: 0 0 3px #f00, 0 0 5px #00f;
+        }
+        .s4{
+            color:coral;
+            /* Border Around text*/
+            text-shadow:-1px 0 black,1px 0 black,0 -1px black,0 1px black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box">
+            <p>text-shadow:horizontal_shadow vertical_shadow color</p>
+            <h1 class="s1">Lorem ipsum dolor sit amet.</h1>
+            <p>text-shadow:horizontal_shadow vertical_shadow blur color</p>
+            <h1 class="s2">Lorem ipsum dolor sit amet.</h1>
+            <p>Multiple Shadow <br>text-shadow: horizontal_shadow vertical_shadow color,horizontal_shadow vertical_shadow color</p>
+            <h1 class="s3">Lorem ipsum dolor sit amet.</h1>
+            <p>Border Around Text <br>text-shadow:(0 1px black)*2,(1px 0 black)*2 just changesign while repeating.</p>            
+            <h1 class="s4">Lorem ipsum dolor sit amet.</h1>
+        </div>
+    </div>
+</body>
+</html>
