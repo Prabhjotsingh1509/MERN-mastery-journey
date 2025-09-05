@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .details
+    {
+        background-color: aqua;
+        color:black;
+        height: 100vh;
+        width:100vw;
+        gap:5px;
+        padding:5px;
+        border:2px black solid;
+        line-height: 50px;
+        overflow-x: hidden;
+
+    }
+    .box{
+        height:30%;
+        width:50%;
+        background-color: red;
+        border:2px solid black;
+
+        transition-property:all;
+        transition-duration: 2s;
+        transition-delay: 1s;
+
+    }
+    .box:hover{
+        width:1200px;
+        height:1000px;
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="details">
+        <h1>Transition</h1>
+        <h4>Transition is a process to switch from one state to another.</h4>
+        <h2>How transition is different from css.</h2>
+        <h4>animation is a series of complex movement and transition is a single step movement.
+        tranistion is a child entity of animations. </h4>
+        <h5>Eg:</h5>
+            <div class="box">
+
+            </div>
+        <h1>Timing</h1>
+    </div>
+</body>
+
+</html>
