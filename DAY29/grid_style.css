@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100%;
+    width:100%;;
+}
+.container{
+height:100%;
+width:100%;
+background-color: rgb(59, 57,57);
+display:grid;
+padding:4rem;
+grid-template-columns: repeat(1,ifr);
+grid-template-rows: repeat(4,200px);
+gap:1rem;
+
+}
+.item{
+    height:100px;
+    width:100px;
+    background-color: rgb(49,206,14);
+    border:5px solid rgb(217,202,202);
+    justify-self: stretch;
+}
